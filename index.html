@@ -329,6 +329,96 @@
             <!-- End  my Kitchenware section  -->
           </div>
         </div>
-        
+        <!-- end my card section -->
+        <!-- start calculation section  -->
+        <div class="mt-11">
+          <div class="bg-[#FFF] h-36 border-solid border-2 border-[#FFF] p-12">
+            <h3 class="text-[#111] font-medium text-lg">Have coupon?</h3>
+            <input id="Apply1" type="text" placeholder="Coupon code" />
+            <button
+              onclick="couponApply()"
+              id="Apply2"
+              type="button"
+              disabled
+              class="border-solid border-2 border-[#E527B2]rounded-lg p-2 bg-[#E527B2] text-white disabled:bg-slate-600"
+            >
+              Apply
+            </button>
+          </div>
+
+          <div
+            class="bg-[#FFF] h-96 border-solid border-2 border-[#FFF] p-12 mt-10"
+          >
+            <div id="created"></div>
+            <hr class="mb-7" />
+            <h3 class="text-[#111] font-medium text-lg">
+              Total price:<span
+                id="total"
+                class="text-[#11111180] font-semibold"
+                >00</span
+              ><span class="text-[#11111180] font-semibold">Tk</span>
+            </h3>
+            <h3 class="text-[#111] font-medium text-lg">
+              Discount:<span
+                id="discount"
+                class="text-[#11111180] font-semibold"
+                >00</span
+              ><span class="text-[#11111180] font-semibold">Tk</span>
+            </h3>
+            <h3 class="text-[#111] font-medium text-lg">
+              Total:<span
+                id="grand-total"
+                class="text-[#11111180] font-semibold"
+                >00</span
+              >
+              <span class="text-[#11111180] font-semibold">Tk</span>
+            </h3>
+            <hr class="mt-10" />
+          </div>
+
+          <button
+            onclick="my_modal_2.showModal()"
+            disabled
+            id="Purchase"
+            class="border-solid border-2 border-[#E527B2] rounded-lg p-2 bg-[#E527B2] text-white w-96 disabled:bg-slate-600"
+          >
+            Make Purchase
+          </button>
+        </div>
+        <!-- end my calculation section  -->
+      </section>
+      <!-- start my bonus part  -->
+
+      <!-- Open the modal using ID.showModal() method -->
+
+      <dialog id="my_modal_2" class="modal">
+        <form method="dialog" class="modal-box">
+          <div class="flex justify-center">
+            <div>
+              <img src="images/congo.png" alt="" class="justify-center" />
+            </div>
+          </div>
+          <h3 class="text-center text-[#111] font-bold text-lg">
+            Congratulations
+          </h3>
+          <p class="py-4 text-center">Your Purchase the product</p>
+          <div class="flex justify-center">
+            <div>
+              <button
+                onclick="buttonApply()"
+                class="border-[#E527B2] rounded-lg p-2 bg-[#E527B2] text-white text-center"
+              >
+                Go Home
+              </button>
+            </div>
+          </div>
+        </form>
+        <form method="dialog" class="modal-backdrop"></form>
+      </dialog>
+
+      <!-- end my bonus part -->
+    </main>
+    <script src=" index.js"></script>
+    <script src="index2.js"></script>
   </body>
 </html>
